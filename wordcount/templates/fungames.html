@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://i.ibb.co/s99C8GQ/rsz-330965536-3483548621916055-8921199451428495014-n.jpg">
+    <title>Fun Games Hub</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f26d7d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        p {
+            margin-top: auto;
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #f252f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #f26d7d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1 style="
+    background-image: linear-gradient(to right, #df3dc9, #8ed1f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  ">
+      I MADE A LOT OF GAMES FOR YOU TO TRY!
+  </h1>
+  <br>
+    <header>
+        <h1>Fun Games Hub</h1>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <h2>Word Counter</h2>
+                <p>You can count how many words you write!</p>
+                <a href="{% url 'count' %}">Play Game 1</a>
+            </li>
+            <li>
+                <h2>Game 2</h2>
+                <p>Coming soon.</p>
+                <a href="#">Play Game 2</a>
+            </li>
+            <li>
+                <h2>Game 3</h2>
+                <p>Coming soon.</p>
+                <a href="#">Play Game 3</a>
+            </li>
+            <li>
+                <h2>Game 4</h2>
+                <p>Coming soon</p>
+                <a href="#">Play Game 4</a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <a href="{% url 'home' %}">Back to Home</a>
+    </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>

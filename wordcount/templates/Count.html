@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon"
+        href="https://i.ibb.co/s99C8GQ/rsz-330965536-3483548621916055-8921199451428495014-n.jpg" />
+    <title>Count</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="
+          background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 36px;
+          font-weight: bold;
+          text-align: center;
+        ">
+            Let's count words together, Start Down Below
+        </h1>
+
+        <p style="
+          color: #424242;
+          font-size: 20px;
+          line-height: 1.5;
+          margin: 20px 0;
+          text-align: center;
+        ">
+            Start Down Below
+        </p>
+    </div>
+    <div style="text-align: center;">
+        <form action="{% url 'counting' %}">
+            <textarea cols="166" rows="10" name="fulltext"></textarea>
+            <br>
+            <input style="
+            background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-image 0.3;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background-image: linear-gradient(to right, #ff8f6f, #9ed1ff);
+            transition: transform 0.3s;
+          " type="submit" value="Count!" />
+        </form>
+    </div>
+
+</body>
+
+<footer>
+    <div class="button-container">
+        <button onclick="window.location.href='{% url 'home' %}'">Go Home</button>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: white;
+        border-top: 1px solid #ccc;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .button-container {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .button-container:hover {
+        transform: translateY(-5px);
+    }
+
+    button {
+        background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-image 0.3s;
+    }
+
+    button:hover {
+        background-image: linear-gradient(to right, #ff8f6f, #9ed1ff);
+    }
+</style>
+
+</html>

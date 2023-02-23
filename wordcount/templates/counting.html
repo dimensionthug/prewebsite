@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://i.ibb.co/s99C8GQ/rsz-330965536-3483548621916055-8921199451428495014-n.jpg">
+    <title>Counting</title>
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word Count Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #FF6B6B;
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0 auto;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #FF6B6B;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #f7bdbd;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            background-color: #fff;
+            color: #f7bbbb;
+            box-shadow: 2px 2px #f37676;
+        }
+
+        button {
+            background-color: #FF6B6B;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 40px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #333;
+            box-shadow: 2px 2px #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> YAYY ! There are {{ count }} words in your text</h1>
+    </header>
+    <main>
+        <h2>Your Text:</h2>
+        <p>{{ fulltext }}</p>
+        <button onclick="location.href='{% url 'count' %}'">Try it again!</button>
+      </main>
+      
+    <footer>
+        <a href="{% url 'home' %}">Back to Home</a>
+    </footer>
+</body>
+
+</html>
